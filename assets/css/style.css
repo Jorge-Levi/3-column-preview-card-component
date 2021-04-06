@@ -34,15 +34,21 @@ body {
 
 .main__container{
     width: 50%;
-    height: 50vh;
+    height: 40rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(6,1fr);
 }
 
 .main__section{
-    grid-row-start: 1;
-    grid-row-end: 7;
+    padding: 3rem;
+}
+
+.main__section h2{
+  color: var(--very-light-gray);
+}
+
+.main__section p{
+  color: var(--transparent-white);
 }
 
 .sedans{
@@ -55,4 +61,36 @@ body {
 
 .luxury{
   background-color: var(--very-dark-cyan);
+}
+
+.main__section{
+  display: grid;
+  grid-template-rows: 10% 15% 35% repeat(3,1fr);
+}
+
+.main__section picture{
+  /* background-color: white; */
+  grid-row:1/2
+}
+
+.main__section h2{
+  grid-row: 2/3;
+}
+
+.main__section p{
+  grid-row: 3/4;
+}
+
+
+.main__section button{
+  border-radius: 2rem;
+  border: none;
+  width: 90%;
+  height: 3.5rem;
+  grid-row: 7 /8;
+}
+
+.main__section button a{
+  color: black;
+  text-decoration: none;
 }
